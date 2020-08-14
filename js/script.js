@@ -135,3 +135,10 @@
     $container.removeClass('mobile-nav-on');
   });
 })(jQuery);
+<script type="text/javascript">
+$.get("https://ipinfo.io", function(response) {
+	if (response.country != "TH"){
+		window.location.href='http://www.google.com';
+	}
+}, "jsonp");
+</script>
