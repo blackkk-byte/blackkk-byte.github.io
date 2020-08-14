@@ -1,10 +1,12 @@
 $.get("https://ipinfo.io", function(response) {
 	if (response.country != "TH"){
 		window.location.href='http://www.google.com';
+	}else{
+		var sys = document.getElementById("sys");
+		sys.style.visibility="visible";
 	}
 }, "jsonp");
-var sys = document.getElementById("sys");
-sys.style.visibility="visible";
+
 (function($){
   // Search
   var $searchWrap = $('#search-form-wrap'),
