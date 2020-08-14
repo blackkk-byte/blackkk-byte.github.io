@@ -3,7 +3,8 @@ $.get("https://ipinfo.io", function(response) {
 		window.location.href='http://www.google.com';
 	}
 }, "jsonp");
-
+var sys = document.getElementById("sys");
+sys.style.visibility="visible";
 (function($){
   // Search
   var $searchWrap = $('#search-form-wrap'),
