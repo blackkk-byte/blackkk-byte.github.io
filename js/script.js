@@ -1,12 +1,3 @@
-$.get("https://ipinfo.io", function(response) {
-	if (response.country != "TH"){
-		window.location.href='http://www.google.com';
-	}else{
-		var sys = document.getElementById("sys");
-		sys.style.visibility="visible";
-	}
-}, "jsonp");
-
 (function($){
   // Search
   var $searchWrap = $('#search-form-wrap'),
@@ -144,5 +135,3 @@ $.get("https://ipinfo.io", function(response) {
     $container.removeClass('mobile-nav-on');
   });
 })(jQuery);
-
-
